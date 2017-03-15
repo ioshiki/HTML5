@@ -1,0 +1,87 @@
+body
+{
+  max-width: 100%;
+  margin:0;
+  height: 1000px;
+  overflow-x: hidden; /*clips and disables horizontal scrolling*/
+}
+/*HTML 5 specific*/
+header,section,article,aside,footer
+{
+	display: block;
+}
+
+header
+{
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  font-size: 40px;
+  color: #ff0000;
+  background-color: #000000;
+  padding-top: 2%;
+}
+
+nav a:link, a:visited
+{
+	text-decoration: none; /*removes hyperlink underlining*/
+  color: #000000;
+}
+
+nav a:hover
+{
+  background-color: #ff0000;
+  color: #000000;
+}
+
+
+ul{
+    list-style-type: none; /*removes bullets from listed items*/
+	margin:20px; /*20pixels of space between elements*/
+	padding:0px;  /*0 pixels of space on each side of elements*/
+	text-align: right; /*aligns navigation list bar to the right*/
+}
+
+li
+{
+  display: inline; /*displays text in a line*/
+	margin: 1em; /*space between items*/
+}
+
+asside
+{
+  float: right;
+  width: 37%;
+  min-height: 480;
+}
+
+asside img
+{
+	width: 100%;
+}
+
+section
+{
+  float: left;
+  width: 60%;
+  min-height: 480px;
+  padding-left: 20px; /*adds left padding so it doesnt stick on margin*/
+}
+
+section h2
+{
+  font: 14pt Helvetica, "Helvetica neue", Arial, sans-serif;
+  font-weight: lighter;
+  color: #493831;
+  margin: 0;
+}
+
+footer
+{
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  margin: 1em;
+  position: relative;
+  clear: both; /*makes it drop below elements that are declared float: left or right*/
+}
